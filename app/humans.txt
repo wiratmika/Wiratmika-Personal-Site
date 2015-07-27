@@ -1,0 +1,25 @@
+/* TEAM */
+	Skipper, designer, developer: Wiratmika
+	Contact: wiratmika [at] gmail.com
+	Twitter: @wiratmika
+	From: Jakarta, Indonesia
+
+/* SITE */
+	Inspired by: andrewshen.net
+	Last update: 2015/05/13
+	Language: English
+	Doctype: HTML5
+	Standards: HTML5, CSS3, ECMAScript 5.1
+	Editor: Sublime Text 3
+	Tools/Software/Framework/Libraries/Components (in alphabetical order):
+		Adobe Photoshop
+		Foundation 5
+		generator-gulp-webapp
+		Git
+		HTML5 Boilerplate
+		jQuery
+		libsass
+		Modernizr
+		Normalize.css
+		Sublime Text 3
+		Yeoman
