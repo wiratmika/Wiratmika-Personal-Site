@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="Passionate Student of Information Technology">
+	<meta name="description" content="Portfolio page of Wiratmika, an unordinary and passionate student of information technology.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Wiratmika; A Portfolio of</title>
 
@@ -16,6 +16,8 @@
 	<!-- build:css styles/vendor.css -->
 	<!-- bower:css -->
 	<link rel="stylesheet" href="/bower_components/fontawesome/css/font-awesome.css" />
+	<link rel="stylesheet" href="/bower_components/photoswipe/dist/photoswipe.css" />
+	<link rel="stylesheet" href="/bower_components/photoswipe/dist/default-skin/default-skin.css" />
 	<!-- endbower -->
 	<!-- endbuild -->
 
@@ -29,7 +31,7 @@
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@wiratmika">
 	<meta name="twitter:title" content="Wiratmika; A Portfolio of">
-	<meta name="twitter:description" content="Passionate Student of Information Technology.">
+	<meta name="twitter:description" content="Portfolio page of Wiratmika, an unordinary and passionate student of information technology.">
 	<meta name="twitter:creator" content="@wiratmika">
 	<meta name="twitter:image" content="apple-touch-icon.png">
 
@@ -38,7 +40,7 @@
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://indigowalr.us/about">
 	<meta property="og:image" content="apple-touch-icon.png">
-	<meta property="og:description" content="Passionate Student of Information Technology.">
+	<meta property="og:description" content="Portfolio page of Wiratmika, an unordinary and passionate student of information technology.">
 	<meta property="og:site_name" content="Wiratmika; A Portfolio of">
 	<meta property="fb:admins" content="wiratmika">
 </head>
@@ -67,143 +69,166 @@
 		</nav>
 	</header>
 
-	<section id="hello">
-		<div class="row">
-			<div class="small-12 small-centered columns">
-				<h2 class="text-center">Hello, there.</h2>
-				<p class="text-center">Thank you for your curiosity of me.</p>
+	<div class="upper">
+		<section id="hello">
+			<div class="row">
+				<div class="small-12 small-centered columns">
+					<h2 class="text-center">Hello, there.</h2>
+					<p class="text-center">Thank you for your curiosity of me.</p>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<section id="about">
-		<h2 class="text-center" data-magellan-destination="about">About Me</h2>
-		<a name="about"></a>
+		<section id="about">
+			<h2 class="text-center" data-magellan-destination="about">About Me</h2>
+			<a name="about"></a>
+			<div class="divider"></div>
+
+			<div class="row">
+				<div class="small-6 small-centered medium-3 medium-uncentered columns"><img class="wiratmika" src="images/wiratmika.jpg" alt="Wiratmika"></div>
+
+				<div class="small-12 medium-9 columns"><p>I'm a computer science undergraduate student hailing from Jakarta, Indonesia. I love everything about aerospace, information technology, and startup scene. Appreciating good design, I believe that art, science and technology are inseparable entities in our ever-growing digital world.</p></div>
+			</div>
+		</section>
+
+		<section id="portfolio">
+			<h2 class="text-center" data-magellan-destination="portfolio">Portfolio</h2>
+			<a name="portfolio"></a>
+			<div class="divider"></div>
+
+			<div class="row">
+				<div class="small-9 small-centered columns">
+					<p class="text-center">Here are several projects that I've done.</p>
+				</div>
+			</div>
+
+			<ul class="row grid cs-style">
+				<li class="works small-12 medium-6 large-4 columns">
+					<figure>
+						<div>
+							<img src="images/vv.jpg" alt="Vakansi Visual">
+							<figcaption>
+								<h3>Vakansi Visual</h3>
+								<span>Designer &amp; Developer</span>
+								<a href="//vakansivisual.com" class="button">View</a>
+							</figcaption>
+						</div>
+					</figure>
+				</li>
+				<li class="works small-12 medium-6 large-4 columns">
+					<figure>
+						<div>
+							<img src="images/oh.jpg" alt="OH Fasilkom">
+							<figcaption>
+								<h3>OH Fasilkom</h3>
+								<span>Developer</span>
+								<a href="//ohfasilkom.com" class="button">View</a>
+							</figcaption>
+						</div>
+					</figure>
+				</li>
+				<li class="works small-12 medium-6 large-4 columns">
+					<figure>
+						<div>
+							<img src="images/compfest.jpg" alt="Startup Academy CompFest7">
+							<figcaption>
+								<h3>Startup Academy</h3>
+								<span>Person in Charge</span>
+								<a href="//compfest.web.id/event/startup-academy" class="button">View</a>
+							</figcaption>
+						</div>
+					</figure>
+				</li>
+				<li class="works small-12 medium-6 large-4 columns">
+					<figure>
+						<div>
+							<img src="images/rat.jpg" alt="The Rat">
+							<figcaption>
+								<h3>The Rat</h3>
+								<span>Editor</span>
+								<a href="//youtu.be/udhNaiEDRfs" class="button">View</a>
+							</figcaption>
+						</div>
+					</figure>
+				</li>
+				<li class="works small-12 medium-6 large-4 columns end">
+					<figure>
+						<div>
+							<img src="images/you.jpg" alt="Your Call">
+							<figcaption>
+								<h3>Your Call</h3>
+								<span>Let's Collaborate!</span>
+								<a href="#contact" class="button">Contact</a>
+							</figcaption>
+						</div>
+					</figure>
+				</li>
+			</ul>
+		</section>
+
+		<section id="specialities">
+			<h2 class="text-center" data-magellan-destination="specialities">My Specialities</h2>
+			<a name="specialities"></a>
+			<div class="divider"></div>
+
+			<div class="row">
+				<div class="small-12 medium-4 columns">
+					<div class="row">
+						<div class="small-10 small-centered columns text-center">
+							<i class="fa fa-5x fa-terminal speciality"></i>
+						</div>
+					</div>
+					<div class="row">
+						<div class="small-12 columns">
+							<h3 class="text-center">Programming</h3>
+							<p class="text-center">Most of the time, I pretend to.</p>
+						</div>
+					</div>
+				</div>
+				<div class="small-12 medium-4 columns">
+					<div class="row">
+						<div class="small-10 small-centered columns text-center">
+							<i class="fa fa-5x fa-paint-brush speciality"></i>
+						</div>
+					</div>
+					<div class="row">
+						<div class="small-12 columns">
+							<h3 class="text-center">Design</h3>
+							<p class="text-center">Doing flat design before it was cool.</p>
+						</div>
+					</div>
+				</div>
+				<div class="small-12 medium-4 columns">
+					<div class="row">
+						<div class="small-10 small-centered columns text-center">
+							<i class="fa fa-5x fa-laptop speciality"></i>
+						</div>
+					</div>
+					<div class="row">
+						<div class="small-12 columns">
+							<h3 class="text-center">Web Development</h3>
+							<p class="text-center">Good friend of CLI.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<section id="wall">
+		<h2 class="text-center" data-magellan-destination="wall">Wall</h2>
+		<a name="wall"></a>
 		<div class="divider"></div>
 
 		<div class="row">
-			<div class="small-6 small-centered medium-3 medium-uncentered columns"><img class="circle" src="images/wiratmika.jpg" alt="Wiratmika"></div>
-
-			<div class="small-12 medium-9 columns"><p>I'm a computer science undergraduate student hailing from Jakarta, Indonesia. I love everything about aerospace, information technology, and startup scene. Appreciating good design, I believe that art, science and technology are inseparable entities in our ever-growing digital world.</p></div>
-		</div>
-	</section>
-
-	<section id="portfolio">
-		<h2 class="text-center" data-magellan-destination="portfolio">Portfolio</h2>
-		<a name="portfolio"></a>
-		<div class="divider"></div>
-
-		<div class="row">
-			<div class="small-9 small-centered columns">
-				<p class="text-center">Here are several works that I've done.</p>
-			</div>
-		</div>
-
-		<ul class="row grid cs-style">
-			<li class="works small-12 medium-6 large-4 columns">
-				<figure>
-					<img src="images/vv.jpg" alt="Vakansi Visual">
-					<figcaption>
-						<h3>Vakansi Visual</h3>
-						<span>Designer and Developer</span>
-						<a href="//vakansivisual.com" class="button">View</a>
-					</figcaption>
-				</figure>
-			</li>
-			<li class="works small-12 medium-6 large-4 columns">
-				<figure>
-					<img src="images/oh.jpg" alt="OH Fasilkom">
-					<figcaption>
-						<h3>OH Fasilkom</h3>
-						<span>Developer</span>
-						<a href="//ohfasilkom.com" class="button">View</a>
-					</figcaption>
-				</figure>
-			</li>
-			<li class="works small-12 medium-6 large-4 columns">
-				<figure>
-					<img src="images/compfest.jpg" alt="Startup Academy CompFest7">
-					<figcaption>
-						<h3>Startup Academy</h3>
-						<span>Person in Charge</span>
-						<a href="//compfest.web.id" class="button">View</a>
-					</figcaption>
-				</figure>
-			</li>
-			<li class="works small-12 medium-6 large-4 columns">
-				<figure>
-					<img src="images/rat.jpg" alt="The Rat">
-					<figcaption>
-						<h3>The Rat</h3>
-						<span>Editor</span>
-						<a href="//youtu.be/udhNaiEDRfs" class="button">View</a>
-					</figcaption>
-				</figure>
-			</li>
-			<li class="works small-12 medium-6 large-4 columns end">
-				<figure>
-					<img src="images/you.jpg" alt="Your Call">
-					<figcaption>
-						<h3>Your Call</h3>
-						<span>Let's Collaborate!</span>
-						<a href="#contact" class="button">Contact</a>
-					</figcaption>
-				</figure>
-			</li>
-		</ul>
-	</section>
-
-	<section id="specialities">
-		<h2 class="text-center" data-magellan-destination="specialities">My Specialities</h2>
-		<a name="specialities"></a>
-		<div class="divider"></div>
-
-		<div class="row">
-			<div class="small-12 medium-4 columns">
-				<div class="row">
-					<div class="small-10 small-centered columns text-center">
-						<span class="fa-stack fa-5x">
-							<i class="fa fa-stack-1x fa-terminal"></i>
-						</span>
-					</div>
-				</div>
-				<div class="row">
-					<div class="small-12 columns">
-						<h3 class="text-center">Programming</h3>
-						<p class="text-center">Most of the time, I pretend to.</p>
-					</div>
+				<div class="small-9 small-centered columns">
+					<p class="text-center">Click to enlarge.</p>
 				</div>
 			</div>
-			<div class="small-12 medium-4 columns">
-				<div class="row">
-					<div class="small-10 small-centered columns text-center">
-						<span class="fa-stack fa-5x">
-							<i class="fa fa-stack-1x fa-paint-brush"></i>
-						</span>
-					</div>
-				</div>
-				<div class="row">
-					<div class="small-12 columns">
-						<h3 class="text-center">Design</h3>
-						<p class="text-center">Doing flat design before it was cool.</p>
-					</div>
-				</div>
-			</div>
-			<div class="small-12 medium-4 columns">
-				<div class="row">
-					<div class="small-10 small-centered columns text-center">
-						<span class="fa-stack fa-5x">
-							<i class="fa fa-stack-1x fa-laptop"></i>
-						</span>
-					</div>
-				</div>
-				<div class="row">
-					<div class="small-12 columns">
-						<h3 class="text-center">Web Development</h3>
-						<p class="text-center">Good friend of CLI.</p>
-					</div>
-				</div>
-			</div>
+
+		<div class="gallery">
+			<div class="gallery-sizer"></div>
+			<div class="gallery-item"><img></div>
 		</div>
 	</section>
 
@@ -212,26 +237,68 @@
 		<a name="contact"></a>
 
 		<div class="row">
-			<div class="medium-8 medium-push-4 columns contactinfo">
+			<div class="medium-9 medium-push-3 columns">
 				<h3>Drop me a message!</h3>
 				<p class="lead">I am moonlighting in interesting projects. Contact me and let's have a nice evening chat together.</p>
-				<p><a href="//twitter.com/wiratmika">@wiratmika</a> | <a href="//plus.google.com/+Wiratmika">+Wiratmika</a> | +62 812 9662 9114</p>
 			</div>
-			<div class="medium-4 medium-pull-8 columns contactinfo">
-				<a class="button fixed-width" href="//id.linkedin.com/in/wiratmika">View Profile</a>
-				<a class="button fixed-width" href="//blog.wiratmika.me">View Blog</a>
-				<a class="button fixed-width" href="mailto:&#119;&#105;&#114;&#097;&#116;&#109;&#105;&#107;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Send Message</a>
+
+			<div class="medium-3 medium-pull-9 columns">
+				<div class="row">
+					<div class="small-4 columns"><a href="mailto:&#119;&#105;&#114;&#097;&#116;&#109;&#105;&#107;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" class="fa fa-4x fa-envelope-square social"></a></div>
+					<div class="small-4 columns"><a href="//id.linkedin.com/in/wiratmika" class="fa fa-4x fa-linkedin-square social"></a></div>
+					<div class="small-4 columns"><a href="//twitter.com/wiratmika" class="fa fa-4x fa-twitter-square social"></a></div>
+					<div class="small-4 columns"><a href="//plus.google.com/+Wiratmika" class="fa fa-4x fa-google-plus-square social"></a></div>
+					<div class="small-4 columns"><a href="//github.com/wiratmika" class="fa fa-4x fa-github-square social"></a></div>
+					<div class="small-4 columns"><a href="//blog.wiratmika.me" class="fa fa-4x fa-rss-square social"></a></div>
+				</div>
 			</div>
 		</div>
+		<footer>
+			<div class="row">
+				<div class="small-12 medium-6 medium-offset-6 columns">
+					<p class="text-right">&copy; 2015 Wiratmika. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
 	</section>
 
-	<footer>
-		<div class="row">
-			<div class="small-12 medium-6 medium-offset-6 columns">
-				<p class="text-right">&copy; 2015 Wiratmika. All rights reserved.</p>
+	<!-- PhotoSwipe -->
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="pswp__bg"></div>
+		<div class="pswp__scroll-wrap">
+		<div class="pswp__container">
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+		</div>
+		<div class="pswp__ui pswp__ui--hidden">
+			<div class="pswp__top-bar">
+				<div class="pswp__counter"></div>
+				<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+				<button class="pswp__button pswp__button--share" title="Share"></button>
+				<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+				<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+				<div class="pswp__preloader">
+					<div class="pswp__preloader__icn">
+						<div class="pswp__preloader__cut">
+							<div class="pswp__preloader__donut"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+				<div class="pswp__share-tooltip"></div>
+			</div>
+			<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+			</button>
+			<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+			</button>
+				<div class="pswp__caption">
+					<div class="pswp__caption__center"></div>
+				</div>
 			</div>
 		</div>
-	</footer>
+	</div>
 
 	<!-- build:js scripts/vendor.js -->
 	<!-- bower:js -->
@@ -240,11 +307,17 @@
 	<script src="/bower_components/jquery.cookie/jquery.cookie.js"></script>
 	<script src="/bower_components/jquery-placeholder/jquery.placeholder.js"></script>
 	<script src="/bower_components/foundation/js/foundation.js"></script>
+	<script src="/bower_components/masonry/dist/masonry.pkgd.js"></script>
+	<script src="/bower_components/photoswipe/dist/photoswipe.js"></script>
+	<script src="/bower_components/photoswipe/dist/photoswipe-ui-default.js"></script>
+	<script src="/bower_components/pure-templates/libs/pure.js"></script>
 	<!-- endbower -->
 	<!-- endbuild -->
+	<script src="/bower_components/masonry/dist/masonry.pkgd.min.js"></script>
 
 		<!-- build:js scripts/main.js -->
 		<script src="scripts/main.js"></script>
+		<script src="scripts/caption_hover_effects.js"></script>
 		<!-- endbuild -->
 </body>
 </html>

@@ -2,9 +2,18 @@
   "name": "wiratmika",
   "private": true,
   "dependencies": {
-    "jquery": "~2.1.1",
-    "modernizr": "~2.8.1",
+    "fontawesome": "~4.3.0",
     "foundation": "~5.5.1",
-    "fontawesome": "~4.3.0"
+    "jquery": "~2.1.1",
+    "masonry": "~3.3.1",
+    "modernizr": "~2.8.1",
+    "photoswipe": "~4.1.0",
+    "pure-templates": "beebole-pure#*"
+  },
+  "overrides": {
+    "masonry": {
+      "main": ["./dist/masonry.pkgd.js"],
+      "dependencies": {}
+    }
   }
 }

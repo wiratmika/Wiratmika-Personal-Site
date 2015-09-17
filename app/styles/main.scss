@@ -4,7 +4,11 @@
 @import "normalize";
 @import "settings";
 @import "foundation";
+@import "caption_hover_effects";
 
+// ================
+// Base Definitions
+// ================
 .browserupgrade {
 	margin: 0.2em 0;
 	background: #ccc;
@@ -17,26 +21,50 @@
 	background: $turqoise;
 }
 
-.circle {
-	border-radius: 50%;
+#about, #portfolio, #specialities, #wall, #contact {
+	position: relative;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 }
 
-.fixed-width {
-	width: 12rem;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+.upper {
+	position: relative;
 }
 
 .divider {
 	margin-left: auto;
-	margin-right:auto;
+	margin-right: auto;
 	margin-top: 1rem;
 	width: 50px;
 	border-top: 2px solid $iron;
 	padding-bottom: 2.3rem;
 }
 
+// ============
+// Font Awesome
+// ============
+.fa {
+	&.speciality {
+		color: $turqoise;
+		text-shadow: #FFE5B4 1px 3px 0;
+		line-height: 2em;
+	}
+
+	&.social {
+		color: lighten($turqoise, 15%);
+		transition: color 0.2s ease;
+		margin: 0.3rem;
+		text-shadow: 3px 3px $black;
+
+		&:hover {
+			color: white;
+		}
+	}
+}
+
+// ======
+// Topbar
+// ======
 .top-bar-section li {
 	width: 8rem;
 }
@@ -49,6 +77,9 @@ body {
 	display: none;
 }
 
+// =====
+// Hello
+// =====
 #hello {
 	background: url("../images/fuji.jpg") no-repeat fixed 50% 0%;
 	background-size: cover;
@@ -64,134 +95,71 @@ body {
 	}
 }
 
-#about, #portfolio, #specialities, #contact {
-	padding-top: 5rem;
-	padding-bottom: 5rem;
+// =====
+// About
+// =====
+.wiratmika {
+	border-radius: 50%;
+	box-shadow: 0 0 5px $jet;
 }
 
+#about p {
+	@media #{$small-only} {
+		text-align: center;
+	}
+}
+
+// =========
+// Portfolio
+// =========
 #portfolio {
 	background: $white-smoke;
 }
 
-.fa-stack {
-	display: block;
-	margin: auto;
+// ====
+// Wall
+// ====
+#wall {
+	position: relative;
+	background: $black;
+	z-index: 100;
+
+	h2 {
+		color: $white;
+	}
 }
 
-.fa-stack-1x {
-	color: $turqoise;
-	text-shadow: #FFE5B4 1px 3px 0;
+.gallery-sizer, .gallery-item {
+	width: 50%;
+
+	@media #{$medium-only} {
+		width: 25%;
+	}
+
+	@media #{$large-up} {
+		width: 20%;
+	}
 }
 
+// =======
+// Contact
+// =======
 #contact {
 	background: url("../images/tree.jpg") no-repeat fixed 50% 0%;
 	background-size: cover;
 	color: white;
+	padding-top: 8rem;
+	padding-bottom: 0;
 
 	h3 {
 		color: white;
-	}
-}
-
-.contactinfo {
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-
-}
-
-// Portfolio custom CSS
-// Courtesy of http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
-.works:not(.end) {
-	margin-bottom: 1.5rem;
-}
-
-.grid {
-	max-width: 1300px;
-	list-style: none;
-
-	figure {
-		margin: 0;
-		position: relative;
-
-		img {
-			max-width: 100%;
-			position: relative;
-		}
-	}
-
-	figcaption {
-		position: absolute;
-		top: 0;
-		left: 0;
-		padding: 20px;
-		background: $jet;
-		color: $turqoise;
-
-		h3 {
-			margin: 0;
-			padding: 0;
-			color: $white;
-		}
-
-		a {
-			text-align: center;
-			padding: 5px 10px;
-			display: inline-block;
-			background: $turqoise;
-			color: $white;
-		}
-	}
-}
-
-.cs-style {
-	figure {
-		overflow: hidden;
-
-		img {
-			transition: transform 0.4s;
-		}
-	}
-
-	figcaption {
-		height: 100px;
-		width: 100%;
-		top: auto;
-		bottom: 0;
-		opacity: 0;
-		transform: translateY(100%);
-		transition: transform 0.4s, opacity 0.1s 0.3s;
-
-		a {
-			position: absolute;
-			bottom: 20px;
-			right: 20px;
-		}
-	}
-}
-
-.no-touch .cs-style figure:hover img,
-.cs-style figure.cs-hover img {
-	transform: translateY(-50px);
-}
-
-.no-touch .cs-style figure:hover figcaption,
-.cs-style figure.cs-hover figcaption {
-	opacity: 1;
-	transform: translateY(0px);
-	transition: transform 0.4s, opacity 0.1s;
-}
-
-@media screen and (max-width: 31.5em) {
-	.grid {
-		padding: 10px 10px 100px 10px;
-
-		li {
-			width: 100%;
-			min-width: 300px;
-		}
+		margin-top: 1rem;
 	}
 }
 
 footer {
-	padding-top: 20px;
+	padding-top: 1.2rem;
+	margin-top: 7rem;
+	border-top: 2px solid $white;
+	text-shadow: $black 1px 1px 0;
 }

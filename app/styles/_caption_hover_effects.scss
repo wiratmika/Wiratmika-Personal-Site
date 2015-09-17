@@ -1,0 +1,115 @@
+// Source: http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
+.works:not(.end) {
+	margin-bottom: 1.5rem;
+}
+
+.grid {
+	max-width: 1300px;
+	list-style: none;
+
+	figure {
+		margin: 0;
+		position: relative;
+
+		img {
+			max-width: 100%;
+			position: relative;
+		}
+	}
+
+	figcaption {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 20px;
+		background: $jet;
+		color: $turqoise;
+
+		h3 {
+			margin: 0;
+			padding: 0;
+			color: $white;
+		}
+
+		a {
+			text-align: center;
+			padding: 5px 10px;
+			display: inline-block;
+			background: $turqoise;
+			color: $white;
+		}
+	}
+}
+
+@media screen and (max-width: 31.5em) {
+	.grid {
+		padding: 10px 10px 100px 10px;
+
+		li {
+			width: 100%;
+			min-width: 300px;
+		}
+	}
+}
+
+.cs-style {
+	li {
+		perspective: 1700px;
+		perspective-origin: 0 50%;
+	}
+
+	figure {
+		transform-style: preserve-3d;
+
+		> div {
+			overflow: hidden;
+		}
+
+		img {
+			transition: transform 0.4s;
+		}
+	}
+}
+.no-touch .cs-style figure:hover img,
+.cs-style figure.cs-hover img {
+	transform: translateX(25%);
+}
+
+.cs-style figcaption {
+	height: 100%;
+	width: 50%;
+	opacity: 0;
+	backface-visibility: hidden;
+	transform-origin: 0 0;
+	transform: rotateY(-90deg);
+	transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.no-touch .cs-style figure:hover figcaption,
+.cs-style figure.cs-hover figcaption {
+	opacity: 1;
+	transform: rotateY(0deg);
+	transition: transform 0.4s, opacity 0.1s;
+}
+
+.cs-style figcaption {
+	span {
+		display: inline-block;
+		font-size: 1rem;
+	}
+
+	a {
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+
+		background: $jet;
+		outline-color: $white;
+
+		&:hover {
+			background: rgba(255, 255, 255, 0.9);
+			outline: 2px solid $white;
+			color: $black !important;
+		}
+	}
+}
