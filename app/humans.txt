@@ -6,7 +6,6 @@
 
 /* SITE */
 	Inspired by: andrewshen.net
-	Last update: 2015/05/13
 	Language: English
 	Doctype: HTML5
 	Standards: HTML5, CSS3, ECMAScript 5.1
