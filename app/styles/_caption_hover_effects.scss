@@ -96,6 +96,11 @@
 	span {
 		display: inline-block;
 		font-size: 1rem;
+
+		&.description {
+			color: lighten($turqoise, 50%);
+			font-size: 1.2rem;
+		}
 	}
 
 	a {
