@@ -36,7 +36,6 @@
 			padding: 5px 10px;
 			display: inline-block;
 			background: $turqoise;
-			color: $white;
 		}
 	}
 }
@@ -93,23 +92,13 @@
 }
 
 .cs-style figcaption {
-	span {
-		display: inline-block;
-		font-size: 1rem;
-
-		&.description {
-			color: lighten($turqoise, 50%);
-			font-size: 1.2rem;
-		}
-	}
-
 	a {
 		position: absolute;
 		bottom: 20px;
 		right: 20px;
 
 		background: $jet;
-		outline-color: $white;
+		outline-color: $turqoise;
 
 		&:hover {
 			background: rgba(255, 255, 255, 0.9);
