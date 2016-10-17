@@ -5,6 +5,19 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
+var panini = require('panini');
+
+gulp.task('panini', function() {
+  return gulp.src('app/pages/**/*.html')
+    .pipe(panini({
+      root: 'app/pages/',
+      layouts: 'app/layouts/',
+      partials: 'app/partials/',
+      helpers: 'app/helpers/',
+      data: 'app/data/'
+    }))
+    .pipe(gulp.dest('.tmp'));
+});
 
 gulp.task('styles', function () {
   return gulp.src('app/styles/main.scss')
@@ -34,7 +47,8 @@ gulp.task('jshint', function () {
 gulp.task('html', ['styles'], function () {
   var assets = $.useref.assets({searchPath: ['.tmp', 'app', '.']});
 
-  return gulp.src('app/*.html')
+  // return gulp.src('app/*.html')
+  return gulp.src('.tmp/*.html')
     .pipe(assets)
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.csso()))
@@ -75,7 +89,7 @@ gulp.task('extras', function () {
 
 gulp.task('clean', require('del').bind(null, ['.tmp', 'dist']));
 
-gulp.task('serve', ['styles', 'fonts'], function () {
+gulp.task('serve', ['panini', 'styles', 'fonts'], function () {
   browserSync({
     notify: false,
     port: 9000,
@@ -90,14 +104,17 @@ gulp.task('serve', ['styles', 'fonts'], function () {
   // watch for changes
   gulp.watch([
     'app/*.html',
+    'app/pages/**/*.html',
     'app/scripts/**/*.js',
     'app/images/**/*',
     '.tmp/fonts/**/*'
   ]).on('change', reload);
 
+  gulp.watch(['app/pages/{layouts,partials,helpers,data}/**/*'], [panini.refresh]);
   gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);
+  gulp.watch(['app/{layouts,partials,helpers,data}/**/*'], [panini.refresh]);
 });
 
 // inject bower components
@@ -110,7 +127,7 @@ gulp.task('wiredep', function () {
     }))
     .pipe(gulp.dest('app/styles'));
 
-  gulp.src('app/*.html')
+  gulp.src('app/layouts/index.html')
     .pipe(wiredep({
       exclude: ['foundation.css'], // for custom-built foundation
       ignorePath: /^(\.\.\/)*\.\./
@@ -118,7 +135,7 @@ gulp.task('wiredep', function () {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () {
+gulp.task('build', ['panini', 'jshint', 'html', 'images', 'fonts', 'extras'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
