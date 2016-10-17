@@ -141,3 +141,7 @@ gulp.task('build', ['panini', 'jshint', 'html', 'images', 'fonts', 'extras'], fu
 gulp.task('default', ['clean'], function () {
   gulp.start('build');
 });
+
+gulp.task('clear', function (done) {
+  return $.cache.clearAll(done);
+});
