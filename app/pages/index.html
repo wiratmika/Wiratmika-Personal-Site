@@ -32,72 +32,19 @@
         </div>
 
         <ul class="row grid cs-style">
-            <li class="works small-12 medium-6 large-4 columns">
-                <figure>
-                    <div>
-                        <img src="images/lpj.jpg" alt="LPJ Online">
-                        <figcaption>
-                            <h3>LPJ Online</h3>
-                            <a href="#" class="button" data-reveal-id="lpj-online">View</a>
-                        </figcaption>
-                    </div>
-                </figure>
-            </li>
-            <li class="works small-12 medium-6 large-4 columns">
-                <figure>
-                    <div>
-                        <img src="images/vv.jpg" alt="Vakansi Visual">
-                        <figcaption>
-                            <h3>Vakansi Visual</h3>
-                            <a href="#" class="button" data-reveal-id="vakansi-visual">View</a>
-                        </figcaption>
-                    </div>
-                </figure>
-            </li>
-            <li class="works small-12 medium-6 large-4 columns">
-                <figure>
-                    <div>
-                        <img src="images/oh.jpg" alt="OH Fasilkom">
-                        <figcaption>
-                            <h3>OH Fasilkom</h3>
-                            <a href="#" class="button" data-reveal-id="oh-fasilkom">View</a>
-                        </figcaption>
-                    </div>
-                </figure>
-            </li>
-            <li class="works small-12 medium-6 large-4 columns">
-                <figure>
-                    <div>
-                        <img src="images/soh.jpg" alt="Soul of Hearing">
-                        <figcaption>
-                            <h3>Soul of Hearing</h3>
-                            <a href="#" class="button" data-reveal-id="soul-of-hearing">View</a>
-                        </figcaption>
-                    </div>
-                </figure>
-            </li>
-            <li class="works small-12 medium-6 large-4 columns">
-                <figure>
-                    <div>
-                        <img src="images/compfest.jpg" alt="Startup Academy CompFest7">
-                        <figcaption>
-                            <h3>Startup Academy</h3>
-                            <a href="#" class="button" data-reveal-id="startup-academy">View</a>
-                        </figcaption>
-                    </div>
-                </figure>
-            </li>
-            <li class="works small-12 medium-6 large-4 columns">
-                <figure>
-                    <div>
-                        <img src="images/rat.jpg" alt="The Rat">
-                        <figcaption>
-                            <h3>The Rat</h3>
-                            <a href="//youtu.be/udhNaiEDRfs" class="button">View</a>
-                        </figcaption>
-                    </div>
-                </figure>
-            </li>
+            {{#each works}}
+                <li class="works small-12 medium-6 large-4 columns">
+                    <figure>
+                        <div>
+                            <img src="/images/{{ this.id }}.jpg" alt="{{ this.name }}">
+                            <figcaption>
+                                <h3>{{ this.shortname }}</h3>
+                                <a href="#" class="button" data-reveal-id="{{ this.id }}">View</a>
+                            </figcaption>
+                        </div>
+                    </figure>
+                </li>
+            {{/each}}
             <li class="works small-12 medium-6 large-4 columns end">
                 <figure>
                     <div>
@@ -174,7 +121,9 @@
 
     <div class="gallery">
         <div class="gallery-sizer"></div>
-        <div class="gallery-item"><img></div>
+        {{#each gallery}}
+            <div class="gallery-item"><img src="/images/gallery/{{ this.image }}.jpg" alt="{{ this.name }}" data-title="{{ this.description }}" data-size="{{ this.size }}" data-index="{{ @index }}"></div>
+        {{/each}}
     </div>
 </section>
 
@@ -209,4 +158,12 @@
 </section>
 
 {{> photoswipe}}
-{{> modals}}
+
+{{#each works}}
+    <div id="{{ this.id }}" class="reveal-modal text-center" data-reveal aria-hidden="true" role="dialog">
+        <h2>{{ this.name }}</h2>
+        <p class="lead">Role: {{ this.role }} | {{ this.date }} | <a href="{{ this.link }}" target="_blank">Visit</a></p>
+        <p>{{ this.description }}</p>
+        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+{{/each}}

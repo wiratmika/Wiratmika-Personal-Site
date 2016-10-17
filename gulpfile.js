@@ -110,7 +110,6 @@ gulp.task('serve', ['panini', 'styles', 'fonts'], function () {
     '.tmp/fonts/**/*'
   ]).on('change', reload);
 
-  gulp.watch(['app/pages/{layouts,partials,helpers,data}/**/*'], [panini.refresh]);
   gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);

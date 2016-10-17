@@ -7,12 +7,13 @@
     "jquery": "~2.1.1",
     "masonry": "~3.3.1",
     "modernizr": "~2.8.1",
-    "photoswipe": "~4.1.0",
-    "pure-templates": "beebole-pure#*"
+    "photoswipe": "~4.1.0"
   },
   "overrides": {
     "masonry": {
-      "main": ["./dist/masonry.pkgd.js"],
+      "main": [
+        "./dist/masonry.pkgd.js"
+      ],
       "dependencies": {}
     }
   }

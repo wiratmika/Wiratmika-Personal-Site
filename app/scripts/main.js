@@ -49,77 +49,20 @@
 		});
 	});
 
-	// =====================
-	// Gallery functionality
-	// =====================
-	var data = [
-		{
-			name: 'Beyond',
-			image: 'beyond',
-			size: '500x614',
-			description: 'I honestly don\'t know what is this... It\'s just looks cool'
-		},
-		{
-			name: 'Glass',
-			image: 'glass',
-			size: '360x500',
-			description: 'Glass UI'
-		},
-		{
-			name: 'Gundam',
-			image: 'gundam',
-			size: '500x641',
-			description: 'Fully handmade figure made using plastic bottles. Recycling FTW'
-		},
-		{
-			name: 'Listen',
-			image: 'listen',
-			size: '600x600',
-			description: 'Album art concept for a high school garage band'
-		},
-		{
-			name: 'Merah',
-			image: 'merah',
-			size: '500x354',
-			description: 'Book cover for my late dad\'s quasi-fiction book on Indonesia\'s 1965 anti-communist purge'
-		},
-		{
-			name: 'Oprec',
-			image: 'oprec',
-			size: '500x656',
-			description: 'Part one of my work in pseudo-art deco styling'
-		},
-		{
-			name: 'Publication',
-			image: 'publication',
-			size: '500x707',
-			description: 'Part two of my work in pseudo-art deco styling'
-		},
-		{
-			name: 'Time',
-			image: 'time',
-			size: '500x706',
-			description: 'Fancy-ass scrapbook'
-		}
-	];
-
-	var directive = {
-		'div.gallery-item': {
-			'swag<-': {
-				'img@src': function(a) {
-					return 'images/gallery/' + a.item.image + '.jpg';
-				},
-				'img@alt': 'swag.name',
-				'img@data-title': 'swag.description',
-				'img@data-size': 'swag.size',
-				'img@data-index': function(a) {
-					return a.pos;
+	$(function() {
+		$('a[href*="#"]:not([href="#"])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				if (target.length) {
+					$('html, body').animate({
+						scrollTop: target.offset().top
+					}, 1000);
+					return false;
 				}
 			}
-		}
-	};
-
-	$('div.gallery').render(data, directive);
+		});
+	});
 
 	// ========================
 	// PhotoSwipe functionality
