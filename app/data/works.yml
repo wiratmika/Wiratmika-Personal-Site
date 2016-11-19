@@ -1,9 +1,23 @@
 ---
+- id: adkesma-issue-tracker
+  name: Adkesma Issue Tracker BEM Fasilkom UI
+  shortname: Adkesma Issue Tracker
+  role: Full-stack developer
+  date: Oct - Nov 2016
+  link: //bem.cs.ui.ac.id/issue
+  description: Completely redesigned and rebuilt Adkesma Issue Tracker, a platform for students of Faculty of Computer Science Universitas Indonesia to report welfare-related issues.
+- id: uiux-challenge
+  name: UI/UX Challenge Ristek Fasilkom UI
+  shortname: UI/UX Challenge
+  role: Backend developer
+  date: Jun 2016
+  link: //ristek.cs.ui.ac.id/uiuxchallenge
+  description: Created and integrated backend of registration and administration for an internal UI/UX competition at Faculty of Computer Science Universitas Indonesia.
 - id: lpj-online
-  name: LPJ Online
+  name: LPJ Online BEM Fasilkom UI
   shortname: LPJ Online
   role: Full-stack developer
-  date: May 2016 - Jun 2016
+  date: May - Jun 2016
   link: //bem.cs.ui.ac.id/lpj16
   description: Online accountability reporting system of Faculty of Computer Science Student Executive Board to be used by the Internal Control Bureau.
 - id: vakansi-visual
@@ -17,7 +31,7 @@
   name: Open House Fasilkom 2014 Event Website
   shortname: OH Fasilkom
   role: Developer
-  date: Oct 2014 - Nov 2014
+  date: Oct - Nov 2014
   link: //ohfasilkom.indigowalr.us
   description: A promotional website for yearly event held by BEM Fasilkom UI 2014. Wrote the front-end code based on existing mockups.
 - id: soul-of-hearing
