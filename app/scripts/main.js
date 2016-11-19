@@ -22,21 +22,21 @@
 		}
 
 		// Only for non-touch device to prevent laginess
-		if (!Modernizr.touch) {
-			var viewBottom = $('body').scrollTop() + $window.height();
-			var viewOffset = 165;
-			viewBottom -= viewOffset;
+		// if (!Modernizr.touch) {
+		// 	var viewBottom = $('body').scrollTop() + $window.height();
+		// 	var viewOffset = 165;
+		// 	viewBottom -= viewOffset;
 
-			if (viewBottom > $('.upper').height()) {
-				var offset = viewBottom - $('.upper').height();
+		// 	if (viewBottom > $('.upper').height()) {
+		// 		var offset = viewBottom - $('.upper').height();
 
-				if (offset <= $window.height()) {
-					$('.upper').css({top: offset + 'px'});
-				}
-			} else {
-				$('.upper').css({top: 0});
-			}
-		}
+		// 		if (offset <= $window.height()) {
+		// 			$('.upper').css({top: offset + 'px'});
+		// 		}
+		// 	} else {
+		// 		$('.upper').css({top: 0});
+		// 	}
+		// }
 	});
 
 	// =====================
@@ -67,56 +67,56 @@
 	// ========================
 	// PhotoSwipe functionality
 	// ========================
-	function getWallItems() {
-		var items = [];
-		$('.gallery').children().each(function() {
-			var $this = $(this);
-			var $img =  $this.find('img');
+	// function getWallItems() {
+	// 	var items = [];
+	// 	$('.gallery').children().each(function() {
+	// 		var $this = $(this);
+	// 		var $img =  $this.find('img');
 
-			if (!$this.hasClass('gallery-item')) {
-				return true;
-			}
+	// 		if (!$this.hasClass('gallery-item')) {
+	// 			return true;
+	// 		}
 
-			var size = $img.data('size').split('x');
+	// 		var size = $img.data('size').split('x');
 
-			var item = {
-				src: $img.attr('src'),
-				w: parseInt(size[0], 10),
-				h: parseInt(size[1], 10),
-				title: $img.data('title'),
-				el: $this
-			};
-			items.push(item);
-		});
+	// 		var item = {
+	// 			src: $img.attr('src'),
+	// 			w: parseInt(size[0], 10),
+	// 			h: parseInt(size[1], 10),
+	// 			title: $img.data('title'),
+	// 			el: $this
+	// 		};
+	// 		items.push(item);
+	// 	});
 
-		return items;
-	}
+	// 	return items;
+	// }
 
-	function openPhotoSwipe(items, index) {
-		var pswpElement = $('.pswp').get(0);
-		var options = {
-			index: index,
-			getThumbBoundsFn: function(index) {
-				var thumbnail = items[index].el[0];
-				var pageYScroll = window.pageYOffset || $(document).documentElement.scrollTop;
-				var rect = thumbnail.getBoundingClientRect();
+	// function openPhotoSwipe(items, index) {
+	// 	var pswpElement = $('.pswp').get(0);
+	// 	var options = {
+	// 		index: index,
+	// 		getThumbBoundsFn: function(index) {
+	// 			var thumbnail = items[index].el[0];
+	// 			var pageYScroll = window.pageYOffset || $(document).documentElement.scrollTop;
+	// 			var rect = thumbnail.getBoundingClientRect();
 
-				return {
-					x: rect.left,
-					y: rect.top + pageYScroll,
-					w: rect.width
-				};
-			}
-		};
+	// 			return {
+	// 				x: rect.left,
+	// 				y: rect.top + pageYScroll,
+	// 				w: rect.width
+	// 			};
+	// 		}
+	// 	};
 
-		var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
-		gallery.init();
-	}
+	// 	var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+	// 	gallery.init();
+	// }
 
-	var items = getWallItems();
-	$('.gallery-item').click(function() {
-		var index = $(this).find('img').data('index');
+	// var items = getWallItems();
+	// $('.gallery-item').click(function() {
+	// 	var index = $(this).find('img').data('index');
 
-		openPhotoSwipe(items, index);
-	});
+	// 	openPhotoSwipe(items, index);
+	// });
 }());

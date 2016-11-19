@@ -8,4 +8,4 @@ Just in case I forget how to do things:
 2. `gulp` away!
 
 Notable bugs:
-1. Panini doesn't work as expected on `gulp serve`
+1. Panini doesn't work as expected on `gulp serve`. It will only work during first run.
