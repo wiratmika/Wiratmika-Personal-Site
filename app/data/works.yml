@@ -13,6 +13,13 @@
   date: Jun 2016
   link: //ristek.cs.ui.ac.id/uiuxchallenge
   description: Created and integrated backend of registration and administration for an internal UI/UX competition at Faculty of Computer Science Universitas Indonesia.
+# - id: franchiseme
+#   name: FranchiseMe
+#   shortname: FranchiseMe
+#   role: Backend developer
+#   date: Sep 2016
+#   link: //gitlab.com/rahmskai/golden-hammond
+#   description: A hackathon project to help franchise owners manage their outlets and products distribution.
 - id: lpj-online
   name: LPJ Online BEM Fasilkom UI
   shortname: LPJ Online
@@ -23,7 +30,7 @@
 - id: vakansi-visual
   name: Vakansi Visual Company Profile Website
   shortname: Vakansi Visual
-  role: Designer &amp; developer
+  role: Designer & developer
   date: Aug 2014 - Jan 2015
   link: //vakansivisual.indigowalr.us
   description: A company profile website for creative label based in Jakarta. Custom-designed the website and wrote the front-end code.
