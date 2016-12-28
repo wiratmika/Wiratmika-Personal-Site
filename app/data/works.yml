@@ -13,6 +13,13 @@
   date: Jun 2016
   link: //ristek.cs.ui.ac.id/uiuxchallenge
   description: Created and integrated backend of registration and administration for an internal UI/UX competition at Faculty of Computer Science Universitas Indonesia.
+- id: roomseekme
+  name: Roomseekme
+  shortname: Roomseekme
+  role: Side project
+  date: Nov - Dec 2016
+  link: //roomseekme.herokuapp.com/
+  description: An API for React-based room booking application implemented using Laravel Passport.
 # - id: franchiseme
 #   name: FranchiseMe
 #   shortname: FranchiseMe
@@ -26,7 +33,7 @@
   role: Full-stack developer
   date: May - Jun 2016
   link: //bem.cs.ui.ac.id/lpj16
-  description: Online accountability reporting system of Faculty of Computer Science Student Executive Board to be used by the Internal Control Bureau.
+  description: Online accountability reporting system of Faculty of Computer Science Student Executive Board to be used by the Internal Control Bureau. Designed the database schema, wrote back-end system using Laravel and user interfaces using Bootstrap 3.
 - id: vakansi-visual
   name: Vakansi Visual Company Profile Website
   shortname: Vakansi Visual
