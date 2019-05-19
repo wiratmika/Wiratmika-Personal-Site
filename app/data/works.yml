@@ -4,79 +4,39 @@
   shortname: Adkesma Issue Tracker
   role: Full-stack developer
   date: Oct - Nov 2016
-  link: //bem.cs.ui.ac.id/issue
+  link: https://bem.cs.ui.ac.id/issue
   description: Completely redesigned and rebuilt Adkesma Issue Tracker, a platform for students of Faculty of Computer Science Universitas Indonesia to report welfare-related issues.
 - id: uiux-challenge
   name: UI/UX Challenge Ristek Fasilkom UI
   shortname: UI/UX Challenge
   role: Backend developer
   date: Jun 2016
-  link: //ristek.cs.ui.ac.id/uiuxchallenge
   description: Created and integrated backend of registration and administration for an internal UI/UX competition at Faculty of Computer Science Universitas Indonesia.
-- id: roomseekme
-  name: Roomseekme
-  shortname: Roomseekme
-  role: Side project
-  date: Nov - Dec 2016
-  link: //roomseekme.herokuapp.com/
-  description: An API for React-based room booking application implemented using Laravel Passport.
-# - id: franchiseme
-#   name: FranchiseMe
-#   shortname: FranchiseMe
-#   role: Backend developer
-#   date: Sep 2016
-#   link: //gitlab.com/rahmskai/golden-hammond
-#   description: A hackathon project to help franchise owners manage their outlets and products distribution.
 - id: lpj-online
   name: LPJ Online BEM Fasilkom UI
   shortname: LPJ Online
   role: Full-stack developer
   date: May - Jun 2016
-  link: //bem.cs.ui.ac.id/lpj16
+  link: https://bem.cs.ui.ac.id/lpj16
   description: Online accountability reporting system of Faculty of Computer Science Student Executive Board to be used by the Internal Control Bureau. Designed the database schema, wrote back-end system using Laravel and user interfaces using Bootstrap 3.
 - id: vakansi-visual
   name: Vakansi Visual Company Profile Website
   shortname: Vakansi Visual
   role: Designer & developer
   date: Aug 2014 - Jan 2015
-  link: //vakansivisual.indigowalr.us
+  link: https://wiratmika.me/Vakansi-Visual/
   description: A company profile website for creative label based in Jakarta. Custom-designed the website and wrote the front-end code.
 - id: oh-fasilkom
   name: Open House Fasilkom 2014 Event Website
   shortname: OH Fasilkom
   role: Developer
   date: Oct - Nov 2014
-  link: //ohfasilkom.indigowalr.us
+  link: https://wiratmika.me/OH-Fasilkom/
   description: A promotional website for yearly event held by BEM Fasilkom UI 2014. Wrote the front-end code based on existing mockups.
-- id: soul-of-hearing
-  name: Sony Soul of Hearing Event Website
-  shortname: Soul of Hearing
-  role: Developer
-  date: Dec 2015
-  link: //soulofhearing.indigowalr.us
-  description: A mock event website for a client's assignment in marketing vocational study. Wrote the front-end code based on existing wireframes.
 - id: startup-academy
   name: Startup Academy CompFest7
   shortname: Startup Academy
   role: Person in Charge
   date: Nov 2014 - Oct 2015
-  link: //web.archive.org/web/20151110034935/http://compfest.web.id/event/startup-academy
+  link: https://web.archive.org/web/20151110034935/http://compfest.web.id/event/startup-academy
   description: Initiated and organized the first startup education event entirely organized by university students. Startup Academy is an event to ignite Indonesia's young talents in technopreneurship by giving education on startup development.<br>Invited 12 Indonesian startup activists to be mentors and speakers, including Andrias Ekoyuono (Ideosource), Dondi Hananto (Kinara Indonesia), and Sanny Gaddafi (8villages).
-# - id: angklungversary
-#   name: 1st Angklungversary
-#   shortname: Angklungversary
-#   role: Event officer assistant
-#   date: Oct 2014 - Nov 2014
-#   description: Anniversary celebration party of Faculty of Computer Science Class of 2017.
-# - id: sahabat-bugar
-#   name: Grand Launching AngklungTV &amp; Sahabat Bugar
-#   shortname: GL AngklungTV
-#   role: Event organizer
-#   date: Dec 2013
-#   description: An inaugural event for Faculty of Computer Science Class of 2017 YouTube channel which encompasses students with videography interest. Sahabat Bugar is a fun run event open for all Faculty of Computer Science staffs and students.
-- id: the-rat
-  name: The Rat
-  shortname: The Rat
-  role: Editor
-  date: April 2012
-  description: A parody of The Raid, an Indonesian martial art movie.
